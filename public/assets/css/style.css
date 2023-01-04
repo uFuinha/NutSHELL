@@ -1,0 +1,145 @@
+* {
+    transition-duration: 0.3s;
+    animation-timing-function: cubic-bezier(.6,.06,.42,1.01);
+
+    --highlight-color: #04d69b;
+    --dark-highlight-color: #18af57;
+    --lighter-color: #00dee6;
+    --darker-color: black;
+
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    position: relative;
+    margin: none;
+    padding: none;
+    display: flex;
+}
+
+.root {
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: var(--highlight-color);
+    font-size: inherit;
+}
+a:hover {
+    color: var(--lighter-color);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 3rem;
+}
+
+blockquote {
+    position: relative;
+    background-color: #eee;
+    padding: 1rem;
+    padding-left: 3rem;
+    margin: 1rem;
+    margin-left: 2rem;
+}
+blockquote::before{
+    content: '';
+    height: 100%;
+    width: 1rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #ccc;
+}
+
+mark {
+    font-weight: 600;
+    color: var(--dark-highlight-color);
+    background: none;
+}
+
+pre {
+    color: #555;
+    margin-left: 1rem;
+}
+
+footer {
+    margin-top: 15%;
+}
+
+sup {
+    vertical-align: top;
+    font-size: 0.8em;
+}
+
+sub {
+    vertical-align: bottom;
+    font-size: 0.8em;
+}
+
+.MathJax {
+    display: table;
+    margin: 2rem auto;
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        padding: 5% 10%;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    body {
+        padding: 5% 10% 5% 30%;
+    }
+}
+
+@media only screen and (min-width: 1201px){
+    body {
+        padding: 5% 30%;
+    }
+}
+
+@keyframes slide-top{
+    0%{
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-left{
+    0%{
+        transform: translateX(10%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-right{
+    0%{
+        transform: translateX(-10%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

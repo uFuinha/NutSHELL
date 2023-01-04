@@ -1,0 +1,35 @@
+table {
+    margin: 2rem auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table caption {
+    text-align: start;
+    font-style: italic;
+    caption-side: bottom;
+}
+table caption::before {
+    content: '* ';
+}
+
+td {
+    border: 1px solid #333;
+    padding: 1rem 1rem;
+    text-align: center;
+}
+
+th {
+    border: 1px solid #333;
+    padding: 1rem 1rem;
+    background: #ccc;
+    text-align: center;
+}
+
+td.gray-td {
+    background: #ddd;
+}
+
+td.light-gray-td {
+    background: #eee;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <%- options %>
+    <title><%- title %></title>
+</head>
+<body>
+    <div class="root">
+        <%- header %>
+        <div class="post">
+            <%- post %>
+        </div>
+        <%- footer %>
+    </div>
+
+    <!--<script>
+        const postNav = document.querySelector(".post-nav");
+        document.querySelectorAll("h2").forEach(title => { 
+            let titleCopy = title.cloneNode(true);
+                titleCopy.dataset.y = title.getBoundingClientRect().top - 500;
+            postNav.appendChild(titleCopy);
+        });
+
+        const navTitles = document.querySelectorAll(".post-nav h2");
+        window.addEventListener('scroll', function(){
+            postNav.style.top += 10;
+
+            console.log(window.scrollY)
+            navTitles.forEach((title, index) => {
+                if(title.dataset.y <= window.scrollY && navTitles[index + 1 ].dataset.y > window.scrollY){
+                    title.classList.add("current-title");
+                } else {
+                    title.classList.remove("current-title");
+                }
+            })
+        });
+    </script>-->
+</body>
+</html>

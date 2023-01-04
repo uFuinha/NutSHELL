@@ -1,0 +1,32 @@
+.nav-wrapper {
+    width: max-content;
+    height: inherit;
+    padding-top: 15rem;
+
+
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}   
+
+.post-nav {
+    position: sticky;
+    width: 15rem;
+    margin-right: 3rem;
+}
+
+.post-nav h2 {
+    margin: 0.5rem 0;
+    font-size: 1.4rem;
+    position: relative;
+}
+.post-nav h2.current-title{
+    background-color: var(--highlight-color);
+}
+.post-nav h2.current-title::before {
+    content: '';
+    height: 100%;
+    width: 5px;
+    background-color: var(--highlight-color);
+}

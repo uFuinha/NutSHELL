@@ -1,0 +1,24 @@
+.post-link {
+    border-bottom: 1px solid gray;
+    padding-bottom: 1rem;
+}
+.post-link:hover .post-title, .post-link:hover .post-subtitle {
+    transform: translateY(-10%);
+}
+
+.post-link:hover .post-subtitle {
+    color: gray;
+}
+
+.post-title{
+    font-size: 2rem;
+}
+.post-title::after{
+    content: '...';
+    margin-left: 1rem;
+    color: var(--darker-color)
+}
+
+.post-subtitle {
+    color: var(--darker-color);
+}
