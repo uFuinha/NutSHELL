@@ -1,3 +1,5 @@
 /node_modules
 /insert
+
 /posts/*
+!/posts/Lorem
