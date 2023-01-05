@@ -13,7 +13,7 @@ Para iniciar a aplicação:
 ## Inserção de posts
 
 Os posts são escritos em markdown (em uma forma
-baseada em commommark. Para inserir um post, é preciso
+baseada em commommark). Para inserir um post, é preciso
 - salvar o post como um arquivo *post.md*;
     - *a formatação do cabeçalho deve seguir a
     mostrada no exemplo **Ipsum**, com título,
